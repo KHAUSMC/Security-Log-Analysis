@@ -132,7 +132,35 @@ The **`OR` operator** ensures that **employees from either Sales or Finance are 
 
 📊 Query Execution Screenshot
 
-<img src="https://i.imgur.com/4XZbCE5.png" alt="SQL Query Screenshot" width="800">
+c
+
+# 🛡️ Retrieving Employees Who Are Not in the IT Department  
+
+## 📌 Scenario Overview  
+To complete the final round of **security updates**, I needed to retrieve a list of employees **who are NOT in the Information Technology department**. Employees in **IT have already received the update**, so this query ensures that only employees from **other departments** are selected. To achieve this, I queried the `employees` table and applied filters using **SQL's `NOT` operator**.
+
+---
+
+## 🕵️ **SQL Query Used**
+
+SELECT * 
+FROM employees 
+WHERE NOT department = 'Information Technology';
+
+## 📌 Query Explanation  
+
+This query retrieves **all employees except those in the Information Technology department**, using the `WHERE` clause with the `NOT` operator:
+
+- **`NOT department = 'Information Technology'`** →  
+  - Ensures that employees **in the IT department are excluded**.  
+  - Only employees **outside of IT** will be included in the results.  
+  - The **`NOT` operator** reverses the condition, ensuring that employees **from all other departments** are selected for security updates.
+
+ 📊 Query Execution Screenshot
+<img src="https://i.imgur.com/4velZgj.png" alt="SQL Query Screenshot" width="800">
+
+
+
 
 
 
