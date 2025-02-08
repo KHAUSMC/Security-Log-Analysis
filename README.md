@@ -130,7 +130,9 @@ This query retrieves **all employees who belong to either the Sales or Finance d
 
 The **`OR` operator** ensures that **employees from either Sales or Finance are retrieved**, allowing for a **targeted security update on their machines**.
 
+📊 Query Execution Screenshot
 
+<img src="https://i.imgur.com/4XZbCE5.png" alt="SQL Query Screenshot" width="800">
 
 
 
