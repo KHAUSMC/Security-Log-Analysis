@@ -14,11 +14,6 @@ As part of a **security investigation**, I analyzed login activity logs to ident
 SELECT * FROM log_in_attempts 
 WHERE login_time > '18:00' AND success = 0; 
 
-
-## 📊 Query Execution Screenshot
-
-<img src="https://i.imgur.com/RXx4Nwd.png" alt="SQL Query Screenshot" width="800"> 
-
 ## 📌 **Query Explanation**
 This query retrieves **failed login attempts** that occurred **after business hours (18:00 / 6:00 PM)** by using the `WHERE` clause with two conditions:
 
@@ -26,6 +21,11 @@ This query retrieves **failed login attempts** that occurred **after business ho
 - **`AND success = 0`** → Ensures that only **failed login attempts** are included (`0` represents failure in the `success` column).  
 
 The **`AND`** operator ensures that **both conditions must be met** for a row to be included in the results.
+
+
+## 📊 Query Execution Screenshot
+
+<img src="https://i.imgur.com/RXx4Nwd.png" alt="SQL Query Screenshot" width="800"> 
 
 ---
 # 🛡️ Investigating Suspicious Login Activity
@@ -49,7 +49,7 @@ This query retrieves **all login attempts** that took place on **May 8, 2022, or
 
 The **`OR`** operator ensures that **either condition can be true**, so both dates are included in the results.
 
-
+## 📊 Query Execution Screenshot
 <img src="https://i.imgur.com/A6qSSbL.png" alt="SQL Query Screenshot" width="800"> 
 
 
