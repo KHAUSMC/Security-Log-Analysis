@@ -71,6 +71,23 @@ This query retrieves **all login attempts that did not originate in Mexico**, us
   - The **`LIKE 'MEX%'`** pattern ensures that any country value **starting with "MEX"** is matched.  
   - The **`NOT`** operator **excludes** these matched values, filtering out all logins **from Mexico ("MEX" and "MEXICO")**.  
   - The **`LIKE` wildcard `%`** ensures that **any value starting with "MEX"** (including "MEX" and "MEXICO") is excluded.
+ 
+## 📊 Query Execution Screenshot
+<img src="https://i.imgur.com/IGMX2x2.png" alt="SQL Query Screenshot" width="800">
+
+# 🛡️ Retrieving Employees in the Marketing Department (East Building)
+
+## 📌 Scenario Overview  
+To perform **security updates** on specific employee machines in the **Marketing department**, I needed to retrieve **all employees in Marketing** who are located in **any office in the East building**. To do this, I queried the `employees` table and applied filters using **SQL's `LIKE` operator**.
+
+---
+
+## 🕵️ **SQL Query Used**
+
+SELECT * FROM employees 
+WHERE department = 'Marketing' AND office LIKE 'EAST%';
+
+
 
 
 
