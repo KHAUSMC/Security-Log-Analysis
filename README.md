@@ -40,6 +40,10 @@ On **May 8, 2022**, a **suspicious event** occurred, prompting a **security inve
 SELECT * FROM log_in_attempts 
 WHERE login_date = '2022-05-08' OR login_date = '2022-05-09';
 
+<img src="https://i.imgur.com/A6qSSbL.png" alt="SQL Query Screenshot" width="800"> 
+
+
+
 
 
 
