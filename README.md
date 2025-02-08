@@ -87,6 +87,52 @@ To perform **security updates** on specific employee machines in the **Marketing
 SELECT * FROM employees 
 WHERE department = 'Marketing' AND office LIKE 'EAST%';
 
+## 📌 Query Explanation  
+
+This query retrieves **all employees in the Marketing department** who are located in the **East building**, using the `WHERE` clause with **`AND`** and **`LIKE`**:
+
+- **`department = 'Marketing'`** →  
+  - Ensures that only employees in **Marketing** are included.  
+  - This requires an **exact match** in the `department` column.  
+
+- **`AND office LIKE 'EAST%'`** →  
+  - Filters for **employees in the East building**, where office values **start with "EAST"**.  
+  - The **wildcard `%`** ensures that offices like **"EAST-170", "EAST-320"** are included.  
+
+The **`AND`** operator ensures that **both conditions must be met**, meaning only employees who **work in Marketing and are in the East building** are returned.
+
+📊 Query Execution Screenshot
+<img src="https://i.imgur.com/lKPvxyi.png" alt="SQL Query Screenshot" width="800">
+
+# 🛡️ Retrieving Employees in the Sales and Finance Departments  
+
+## 📌 Scenario Overview  
+To perform **security updates** on specific employee machines in the **Sales and Finance departments**, I needed to retrieve **all employees** from these two departments. To achieve this, I queried the `employees` table and applied filters using **SQL's `OR` operator**.
+
+---
+
+## 🕵️ **SQL Query Used:**
+
+SELECT * FROM employees 
+WHERE department = 'Sales' OR department = 'Finance';
+
+## 📌 Query Explanation  
+
+This query retrieves **all employees who belong to either the Sales or Finance departments**, using the `WHERE` clause with `OR`:
+
+- **`department = 'Sales'`** →  
+  - Ensures that employees from **Sales** are included in the result.  
+  - This requires an **exact match** in the `department` column.  
+
+- **`OR department = 'Finance'`** →  
+  - Includes employees from **Finance** as well.  
+  - The **`OR` operator** allows **either condition to be true**, so employees from **both departments** are included.  
+
+The **`OR` operator** ensures that **employees from either Sales or Finance are retrieved**, allowing for a **targeted security update on their machines**.
+
+
+
+
 
 
 
