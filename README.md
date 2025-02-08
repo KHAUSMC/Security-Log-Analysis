@@ -52,6 +52,27 @@ The **`OR`** operator ensures that **either condition can be true**, so both dat
 ## 📊 Query Execution Screenshot
 <img src="https://i.imgur.com/A6qSSbL.png" alt="SQL Query Screenshot" width="800"> 
 
+# 🛡️ Investigating Suspicious Login Activity (Excluding Mexico)
+
+## 📌 Scenario Overview  
+After detecting **suspicious login activity**, I determined that these logins **did not originate from Mexico**. To further investigate, I analyzed login attempts **from all other countries**, ensuring that logins from **both "MEX" and "MEXICO"** were excluded from the dataset.  
+
+---
+
+## 🕵️ **SQL Query Used:**
+SELECT * FROM log_in_attempts 
+WHERE country NOT LIKE 'MEX%';
+
+## 📌 Query Explanation  
+
+This query retrieves **all login attempts that did not originate in Mexico**, using the `WHERE` clause with `NOT LIKE`:
+
+- **`country NOT LIKE 'MEX%'`** →  
+  - The **`LIKE 'MEX%'`** pattern ensures that any country value **starting with "MEX"** is matched.  
+  - The **`NOT`** operator **excludes** these matched values, filtering out all logins **from Mexico ("MEX" and "MEXICO")**.  
+  - The **`LIKE` wildcard `%`** ensures that **any value starting with "MEX"** (including "MEX" and "MEXICO") is excluded.
+
+
 
 
 
