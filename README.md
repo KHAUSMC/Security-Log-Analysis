@@ -40,6 +40,16 @@ On **May 8, 2022**, a **suspicious event** occurred, prompting a **security inve
 SELECT * FROM log_in_attempts 
 WHERE login_date = '2022-05-08' OR login_date = '2022-05-09';
 
+## 📌 Query Explanation  
+
+This query retrieves **all login attempts** that took place on **May 8, 2022, or May 9, 2022**, using the `WHERE` clause combined with the `OR` operator:
+
+- **`login_date = '2022-05-08'`** → Filters login attempts that occurred **on May 8, 2022** (the suspicious event date).  
+- **`OR login_date = '2022-05-09'`** → Includes **logins from May 9, 2022**, to check for **related activity after the event**.  
+
+The **`OR`** operator ensures that **either condition can be true**, so both dates are included in the results.
+
+
 <img src="https://i.imgur.com/A6qSSbL.png" alt="SQL Query Screenshot" width="800"> 
 
 
