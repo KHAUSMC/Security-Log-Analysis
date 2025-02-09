@@ -160,6 +160,11 @@ This query retrieves **all employees except those in the Information Technology 
 <img src="https://i.imgur.com/4velZgj.png" alt="SQL Query Screenshot" width="800">
 
 
+## 🔎 Conclusion
+Through this project, I successfully leveraged SQL for security log analysis, allowing me to detect anomalies, investigate suspicious login activity, and enforce security updates. By applying time-based filtering, country exclusions, and department-specific queries, I was able to identify potential threats and take the necessary steps to mitigate them efficiently. This analysis reinforced the importance of proactive security monitoring and demonstrated how SQL can be a powerful tool for threat detection and response.
+
+
+
 
 
 
